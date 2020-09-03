@@ -1,0 +1,5 @@
+2020-09-03 11:04:13.430[main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor-设置方法[com.imooc.o2o.dao.AreaDao.queryArea] use [slave] Strategy, SqlCommanType [SELECT]..
+2020-09-03 11:04:13.431[main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder-所使用数据源为slave
+2020-09-03 11:04:13.449[main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea-==>  Preparing: select area_id,area_name,priority,create_time,last_edit_time from tb_area order by priority desc
+2020-09-03 11:04:13.521[main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea-==> Parameters: 
+2020-09-03 11:04:13.544[main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea-<==      Total: 2
