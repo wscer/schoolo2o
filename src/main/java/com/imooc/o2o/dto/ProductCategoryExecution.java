@@ -18,13 +18,20 @@ public class ProductCategoryExecution {
 
     }
 
-    //操作失败的时候使用的构造器
+    /**
+     * 操作失败的时候使用的构造器
+     */
+
     public ProductCategoryExecution(ProductCategoryStateEnum productCategoryStateEnum){
         this.state=productCategoryStateEnum.getState();
         this.stateInfo=productCategoryStateEnum.getStateInfo();
     }
 
-    //操作成功时候使用的构造器
+    /**
+     * 操作成功时的构造器
+     * @param productCategoryStateEnum
+     * @param productCategoryList 传入商品类型列表
+     */
     public ProductCategoryExecution(ProductCategoryStateEnum productCategoryStateEnum,List<ProductCategory> productCategoryList){
         this.state=productCategoryStateEnum.getState();
         this.stateInfo=productCategoryStateEnum.getStateInfo();

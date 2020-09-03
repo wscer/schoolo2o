@@ -21,20 +21,30 @@ public class LocalAuthExecution {
 	public LocalAuthExecution() {
 	}
 
-	// 失败的构造器
+	/**
+	 * 	失败的构造器
+ 	 */
 	public LocalAuthExecution(LocalAuthStateEnum stateEnum) {
 		this.state = stateEnum.getState();
 		this.stateInfo = stateEnum.getStateInfo();
 	}
 
-	// 成功的构造器
+	/**
+	 * 操作成功的构造器
+	 * @param stateEnum
+	 * @param localAuth 传入本地账户
+	 */
 	public LocalAuthExecution(LocalAuthStateEnum stateEnum, LocalAuth localAuth) {
 		this.state = stateEnum.getState();
 		this.stateInfo = stateEnum.getStateInfo();
 		this.localAuth = localAuth;
 	}
 
-	// 成功的构造器
+	/**
+	 * 操作成功的构造器
+	 * @param stateEnum
+	 * @param localAuthList 传入本地账户列表
+	 */
 	public LocalAuthExecution(LocalAuthStateEnum stateEnum,
 			List<LocalAuth> localAuthList) {
 		this.state = stateEnum.getState();

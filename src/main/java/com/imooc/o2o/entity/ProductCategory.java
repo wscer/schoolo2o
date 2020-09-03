@@ -6,10 +6,15 @@ import java.util.Date;
  * 商品类别
  */
 public class ProductCategory {
+    //商品类别Id
     private Long productCategoryId;
+    //店铺Id
     private Long shopId;
+    //商品类别名称
     private String productCategoryName;
+    //权重
     private Integer priority;
+    //创建时间
     private Date createTime;
 
     public Long getProductCategoryId() {

@@ -6,9 +6,13 @@ import java.util.Date;
  * 微信账号信息
  */
 public class WechatAuth {
+    //微信账号Id
     private Long wechatAuthId;
+    //微信官方Id
     private String openId;
+    //创建时间
     private Date createTime;
+    //用户信息
     private PersonInfo personInfo;
 
     public Long getWechatAuthId() {

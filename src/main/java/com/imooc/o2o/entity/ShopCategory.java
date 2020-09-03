@@ -6,13 +6,21 @@ import java.util.Date;
  * 店铺类别
  */
 public class ShopCategory {
+    //商铺类别Id
     private Long shopCategoryId;
+    //商铺类别名称
     private String shopCategoryName;
+    //商铺类别描述
     private String shopCategoryDesc;
+    //商铺类别图片
     private String shopCategoryImg;
+    //权重
     private Integer priority;
+    //创建时间
     private Date createTime;
+    //最后修改时间
     private Date lastEditTime;
+    //父类商品Id
     private ShopCategory parent;
 
     public Long getShopCategoryId() {

@@ -11,26 +11,40 @@ public class ShopCategoryExecution {
 
 	// 状态标识
 	private String stateInfo;
-
+	//操作的商铺类型
 	private ShopCategory shopCategory;
 
-	// 操作的商铺类别
+	// 操作的商铺类型列表
 	private List<ShopCategory> shopCategoryList;
 
 	public ShopCategoryExecution() {
 	}
 
+	/**
+	 * 店铺操作失败时使用的构造器
+	 * @param stateEnum
+	 */
 	public ShopCategoryExecution(ShopCategoryStateEnum stateEnum) {
 		this.state = stateEnum.getState();
 		this.stateInfo = stateEnum.getStateInfo();
 	}
 
+	/**
+	 * 操作成功时使用的构造器
+	 * @param stateEnum
+	 * @param shopCategory 传入商铺类型
+	 */
 	public ShopCategoryExecution(ShopCategoryStateEnum stateEnum, ShopCategory shopCategory) {
 		this.state = stateEnum.getState();
 		this.stateInfo = stateEnum.getStateInfo();
 		this.shopCategory = shopCategory;
 	}
 
+	/**
+	 * 操作成功时使用的构造器
+	 * @param stateEnum
+	 * @param shopCategoryList 传入商铺类型列表
+	 */
 	public ShopCategoryExecution(ShopCategoryStateEnum stateEnum, List<ShopCategory> shopCategoryList) {
 		this.state = stateEnum.getState();
 		this.stateInfo = stateEnum.getStateInfo();

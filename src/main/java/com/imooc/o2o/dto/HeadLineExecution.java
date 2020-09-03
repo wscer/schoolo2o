@@ -24,20 +24,31 @@ public class HeadLineExecution {
 	public HeadLineExecution() {
 	}
 
-	// 失败的构造器
+	/**
+	 *  失败的构造器
+	 * @param stateEnum
+	 */
 	public HeadLineExecution(HeadLineStateEnum stateEnum) {
 		this.state = stateEnum.getState();
 		this.stateInfo = stateEnum.getStateInfo();
 	}
 
-	// 成功的构造器
+	/**
+	 * 成功的构造器
+	 * @param stateEnum
+	 * @param headLine 头条信息
+	 */
 	public HeadLineExecution(HeadLineStateEnum stateEnum, HeadLine headLine) {
 		this.state = stateEnum.getState();
 		this.stateInfo = stateEnum.getStateInfo();
 		this.headLine = headLine;
 	}
 
-	// 成功的构造器
+	/**
+	 * 成功的构造器
+	 * @param stateEnum
+	 * @param headLineList 头条信息列表
+	 */
 	public HeadLineExecution(HeadLineStateEnum stateEnum, List<HeadLine> headLineList) {
 		this.state = stateEnum.getState();
 		this.stateInfo = stateEnum.getStateInfo();

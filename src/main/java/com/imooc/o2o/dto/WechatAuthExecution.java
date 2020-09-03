@@ -21,20 +21,31 @@ public class WechatAuthExecution {
 	public WechatAuthExecution() {
 	}
 
-	// 失败的构造器
+	/**
+	 * 失败的构造器
+	 * @param stateEnum
+	 */
 	public WechatAuthExecution(WechatAuthStateEnum stateEnum) {
 		this.state = stateEnum.getState();
 		this.stateInfo = stateEnum.getStateInfo();
 	}
 
-	// 成功的构造器
+	/**
+	 * 成功的构造器
+	 * @param stateEnum
+	 * @param wechatAuth
+	 */
 	public WechatAuthExecution(WechatAuthStateEnum stateEnum, WechatAuth wechatAuth) {
 		this.state = stateEnum.getState();
 		this.stateInfo = stateEnum.getStateInfo();
 		this.wechatAuth = wechatAuth;
 	}
 
-	// 成功的构造器
+	/**
+	 * 成功的构造器
+	 * @param stateEnum
+	 * @param wechatAuthList
+	 */
 	public WechatAuthExecution(WechatAuthStateEnum stateEnum,
 			List<WechatAuth> wechatAuthList) {
 		this.state = stateEnum.getState();

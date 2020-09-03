@@ -13,13 +13,19 @@ public class Result<T> {
 
     }
 
-    //成功时的构造器
+    /**
+     * 成功时的构造器
+     */
+
     public Result(boolean success,T data){
         this.success=success;
         this.data=data;
     }
 
-    //错误时的构造器
+    /**
+     * 错误时的构造器
+     */
+
     public Result(boolean success,int errorCode,String errorMsg){
         this.success=success;
         this.errorCode=errorCode;

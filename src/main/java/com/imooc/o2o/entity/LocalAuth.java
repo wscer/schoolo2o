@@ -6,11 +6,17 @@ import java.util.Date;
  * 本地账户信息
  */
 public class LocalAuth {
+    //本地账号Id
     private Long localAuthId;
+    //用户名
     private String username;
+    //用户密码
     private String password;
+    //创建时间
     private Date createTime;
+    //最后修改时间
     private Date lastEditTime;
+    //用户信息
     private PersonInfo personInfo;
 
     public Long getLocalAuthId() {

@@ -24,20 +24,31 @@ public class AreaExecution {
 	public AreaExecution() {
 	}
 
-	// 失败的构造器
+	/**
+	 * 失败的构造器
+	 * @param stateEnum
+	 */
 	public AreaExecution(AreaStateEnum stateEnum) {
 		this.state = stateEnum.getState();
 		this.stateInfo = stateEnum.getStateInfo();
 	}
 
-	// 成功的构造器
+	/**
+	 * 操作成功的构造器
+	 * @param stateEnum
+	 * @param area 区域
+	 */
 	public AreaExecution(AreaStateEnum stateEnum, Area area) {
 		this.state = stateEnum.getState();
 		this.stateInfo = stateEnum.getStateInfo();
 		this.area = area;
 	}
 
-	// 成功的构造器
+	/**
+	 * 操作成功的构造器
+	 * @param stateEnum
+	 * @param areaList 区域列表
+	 */
 	public AreaExecution(AreaStateEnum stateEnum, List<Area> areaList) {
 		this.state = stateEnum.getState();
 		this.stateInfo = stateEnum.getStateInfo();

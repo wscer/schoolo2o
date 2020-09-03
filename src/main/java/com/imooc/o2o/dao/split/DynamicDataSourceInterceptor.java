@@ -24,6 +24,7 @@ import org.springframework.transaction.support.TransactionSynchronizationManager
 				RowBounds.class, ResultHandler.class }) })
 public class DynamicDataSourceInterceptor implements Interceptor {
 	private static Logger logger = LoggerFactory.getLogger(DynamicDataSourceInterceptor.class);
+	//正则表达式
 	private static final String REGEX = ".*insert\\u0020.*|.*delete\\u0020.*|.*update\\u0020.*";
 
 	@Override

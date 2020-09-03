@@ -21,20 +21,31 @@ public class ProductExecution {
 
     }
 
-    //失败时的构造器
+    /**
+     * 失败时的构造器
+     */
+
     public ProductExecution(ProductStateEnum productStateEnum){
         this.state=productStateEnum.getState();
         this.stateInfo=productStateEnum.getStateInfo();
     }
 
-    //成功时的构造器
+    /**
+     * 操作成功时的构造器
+     * @param productStateEnum
+     * @param product 传入商品
+     */
     public ProductExecution(ProductStateEnum productStateEnum, Product product){
         this.state=productStateEnum.getState();
         this.stateInfo=productStateEnum.getStateInfo();
         this.product=product;
     }
 
-    //成功时的构造器
+    /**
+     * 操作成功时的构造器
+     * @param productStateEnum
+     * @param productList 传入商品列表
+     */
     public ProductExecution(ProductStateEnum productStateEnum,List<Product> productList){
         this.state=productStateEnum.getState();
         this.stateInfo=productStateEnum.getStateInfo();
